@@ -1,0 +1,129 @@
+body{
+	background-color:black;
+	margin: 0;
+}
+
+.title{
+font-size: 7rem;
+text-shadow: 0px 0px  8px rgb(124, 223, 234);
+
+}
+section{
+
+	padding: 2rem;
+	font-size: 2rem;
+	background-color:rgb(43, 42, 42);
+	color:white;
+}
+.wrapper{
+	background-color: black;
+	height: 100vh; 
+	overflow-y:auto ;
+	overflow-x: hidden;
+	perspective:15px ;
+}
+header{
+	color: white;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	transform-style: preserve-3d;
+	z-index: -1;
+
+}
+.background,
+.foreground
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.background{
+	position: absolute;
+	transform: translateZ(-10px) scale(1.5);
+
+}
+.foreground{
+	padding-top: 20%;
+transform: translateZ(-2px) scale(1.2);
+
+}
+
+table,form{
+	
+	color: white;
+	background-color:rgb(51, 48, 48);
+	width:100%;
+
+
+}
+input{
+	color: black;
+	width: 80%;
+}
+#btnlog1{
+	background-color:rgb(214, 146, 64) ;
+	border-color: transparent;
+	text-decoration: none;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	color: black;
+
+	font-weight: bolder;
+}
+#btnlog1:hover{
+	background-color:rgb(158, 104, 42) ;
+
+}
+i{ border-radius: 10px;
+	color:rgb(214, 146, 64) ;
+	background-color:rgb(68, 66, 63) ;
+	font-size: 25px;  ;
+}
+i:hover{
+	background-color: rgb(242, 232, 220);
+	border-radius: 50px;
+}
+
+img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.container{
+
+	
+	display: flex;
+	margin: 0;
+	width: 100vw;
+
+	
+
+	
+
+}
+.panel{
+	position: relative;
+	height: 100vh;
+	object-position: center;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 2px;
+	transform: flex 0.6s ease-in;
+
+}
+.panel:hover{
+	flex: 1;
+	transition:flex 0.6s ease-in ;
+}
+.panel.active{
+	flex: 10;
+	transition: ease-in 0.4s;
+}
